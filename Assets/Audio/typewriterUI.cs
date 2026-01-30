@@ -47,6 +47,12 @@ public class typewriterUI : MonoBehaviour
 			}
 			_tmpProText.text += c;
 			_tmpProText.text += leadingChar;
+
+			/*(if (leadingChar == ",")
+			{
+				yield return new WaitForSeconds(timeBtwChars * 10);
+			}*/
+			
 			yield return new WaitForSeconds(timeBtwChars);
 		}
 
