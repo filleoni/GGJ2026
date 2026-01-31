@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class killParticle : MonoBehaviour
 {
-    float killTimer = 3;
+    float killTimer = 2;
     void Update()
     {
         killTimer -= Time.deltaTime;
