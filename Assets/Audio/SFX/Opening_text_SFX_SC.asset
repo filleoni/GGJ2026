@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e444e5f947e2a7409a1eaa10f9fa16e, type: 3}
-  m_Name: test_SC
+  m_Name: Opening_text_SFX_SC
   m_EditorClassIdentifier: 
   internals:
     data:
       foundReferences: []
       previewAudioMixerGroup: {fileID: 0}
       expandPreview: 0
-      expandAudioClips: 0
+      expandAudioClips: 1
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       settingsExpandBase: 1
-      settingsExpandAdvanced: 0
+      settingsExpandAdvanced: 1
       priority: 0.5
-      distanceEnabled: 1
-      distanceScale: 10
+      distanceEnabled: 0
+      distanceScale: 100
       preventEndClicks: 1
-      loopEnabled: 1
-      followPosition: 1
-      stopIfTransformIsNull: 1
+      loopEnabled: 0
+      followPosition: 0
+      stopIfTransformIsNull: 0
       randomStartPosition: 0
       randomStartPositionMin: 0
       randomStartPositionMax: 1
@@ -46,12 +46,12 @@ MonoBehaviour:
       bypassListenerEffects: 0
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
-      volumeExpand: 0
+      volumeExpand: 1
       volumeDecibel: 0
       volumeRatio: 1
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
-      volumeDistanceRolloff: 0
+      volumeDistanceRolloff: -2
       volumeDistanceCurve:
         serializedVersion: 2
         m_Curve:
@@ -436,7 +436,7 @@ MonoBehaviour:
       lowpassAmountEditor: 6
       lowpassAmountEngine: 1
       lowpassDistanceEnable: 0
-      lowpassDistanceFrequencyRolloff: 0
+      lowpassDistanceFrequencyRolloff: -2
       lowpassDistanceFrequencyCurve:
         serializedVersion: 2
         m_Curve:
@@ -650,7 +650,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     audioClips:
-    - {fileID: 8300000, guid: da4c39d128518324c89ea2735caafb3a, type: 3}
+    - {fileID: 8300000, guid: 5f2982471e4d0ff4b938b3631ba5364f, type: 3}
     notes: Notes
-  assetGuid: eed64cec6563b474b9337d49acf0c1a1
-  assetGuidHash: 4511431434910046777
+  assetGuid: 9d91460c11b2e14409a7d997136ede27
+  assetGuidHash: 1236445570549847471

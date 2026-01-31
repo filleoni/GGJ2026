@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b80e83c0feb1444db6d74f0748b6ec9, type: 3}
-  m_Name: SwordScrapeSingleHanded_B_SE
+  m_Name: Opening_text_SFX_SE
   m_EditorClassIdentifier: 
   internals:
     notes: Notes
@@ -88,7 +88,7 @@ MonoBehaviour:
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
       polyphonyMode: 0
-      audioMixerGroup: {fileID: 24300002, guid: 48733d85c98e96444a00ece780ea6b4b, type: 2}
+      audioMixerGroup: {fileID: 0}
       soundVolumeGroup: {fileID: 0}
       soundMix: {fileID: 0}
       soundPolyGroup: {fileID: 0}
@@ -246,6 +246,6 @@ MonoBehaviour:
         soundEvent:
         - {fileID: 0}
     soundContainers:
-    - {fileID: 11400000, guid: 53cd0ebf87cba084d834e1aceca0a42f, type: 2}
-  assetGuid: 55a9da17bcd7a9a479c2921feff7254c
-  assetGuidHash: 2277574876391879378
+    - {fileID: 11400000, guid: 9d91460c11b2e14409a7d997136ede27, type: 2}
+  assetGuid: d53e1c93c979ef244a001c4c00e3c52b
+  assetGuidHash: 7026781437810317515
