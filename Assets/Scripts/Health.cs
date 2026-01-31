@@ -11,14 +11,20 @@ public class Health : MonoBehaviour
     float currentHealth = 1;
     public UnityEvent<Vector2> SignalKnockback;
 
+    Animator animator;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         currentHealth = maxHealth;
     }
 
     public void TakeDamage(float damage)
     {
         currentHealth = Mathf.Max(currentHealth - damage, 0);
+        if (animator)
+            animator.SetTrigger("Damaged");
 
         CheckDeath();
     }

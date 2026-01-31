@@ -41,6 +41,7 @@ public class PlayerMask : ScriptableObject
 
         if (Input.GetButton("Fire1"))
         {
+            laserLine.enabled = true;
             laserLine.SetPosition(0, Vector2.zero);
             laserLine.SetPosition(1, me.Cursor.transform.position - me.transform.position);
 
@@ -63,6 +64,7 @@ public class PlayerMask : ScriptableObject
         }
         else
         {
+            laserLine.enabled = false;
             laserLine.SetPosition(0, Vector3.zero);
             laserLine.SetPosition(1, Vector3.zero);
         }
