@@ -3,12 +3,19 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float movementSpeed;
+    [SerializeField] Health health;
 
     Transform target;
 
     void Start()
     {
         target = Object.FindFirstObjectByType<LifeTree>().transform;
+        if (!health)
+        {
+            health = GetComponent<Health>();
+            if (health)
+                health.SignalKnockback.AddListener((v) => { currentVelocity += (Vector3)v; });
+        }
     }
 
     Vector3 desiredPosition;
