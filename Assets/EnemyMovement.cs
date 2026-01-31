@@ -27,5 +27,10 @@ public class EnemyMovement : MonoBehaviour
 
         currentVelocity = Vector3.Lerp(currentVelocity, desiredVelocity, Time.deltaTime * 5);
         transform.position += currentVelocity * Time.deltaTime * movementSpeed;
+
+        if (currentVelocity.magnitude > 0.1)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(-currentVelocity.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 }
