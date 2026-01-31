@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 public class GravityBomb : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GravityBomb : MonoBehaviour
     [SerializeField] float lifetime = 1;
     [SerializeField] AnimationCurve jumpCurve;
     [SerializeField] float jumpHeight;
+    [SerializeField] ParticleSystem particleSystem;
 
     Vector3 startPos;
     Vector3 targetPos;
@@ -37,6 +39,9 @@ public class GravityBomb : MonoBehaviour
     List<Health> victims = new();
     IEnumerator Explode()
     {
+        particleSystem.Play();
+        particleSystem.transform.SetParent(null);
+
         RaycastHit2D[] hits = Physics2D.CircleCastAll(
             transform.position,
             effectRange,
