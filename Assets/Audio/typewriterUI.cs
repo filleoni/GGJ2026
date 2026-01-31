@@ -13,7 +13,7 @@ public class typewriterUI : MonoBehaviour
 	TMP_Text _tmpProText;
 	string writer;
 	[SerializeField] Image _bgImage;
-	
+    
 	[SerializeField] float delayBeforeStart = 0f;
 	[SerializeField] float timeBtwChars = 0.1f;
 	[SerializeField] string leadingChar = "";
@@ -47,11 +47,6 @@ public class typewriterUI : MonoBehaviour
 			}
 			_tmpProText.text += c;
 			_tmpProText.text += leadingChar;
-
-			/*(if (leadingChar == ",")
-			{
-				yield return new WaitForSeconds(timeBtwChars * 10);
-			}*/
 			
 			yield return new WaitForSeconds(timeBtwChars);
 		}
