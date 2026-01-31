@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1369877176229796657, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1369877176229796657, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1446827184885657756, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_Name
-      value: Small
+      value: Willer
       objectReference: {fileID: 0}
     - target: {fileID: 1994793048484653774, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63,7 +63,11 @@ PrefabInstance:
     - target: {fileID: 2561768974387333039, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f2c08d879af957b44aa116437fd356ad, type: 3}
+      objectReference: {fileID: 887582166754057728, guid: cd1272381fadd1846bfff79f2d0da06e, type: 3}
+    - target: {fileID: 6059067065674270331, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: m_Radius
+      value: 0.27
+      objectReference: {fileID: 0}
     - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: maxHealth
       value: 5

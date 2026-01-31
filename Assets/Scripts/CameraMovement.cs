@@ -19,7 +19,7 @@ public class CameraMovement : MonoBehaviour
         int amount = 0;
         for (int i = 0; i < target.Count; i++)
         {
-            newPos += target[i].position;
+            newPos += target[i].position / 1.5f;
             amount ++;
         }
         newPos /= amount;

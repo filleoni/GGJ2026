@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 754274930832777441, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f2c08d879af957b44aa116437fd356ad, type: 3}
+      objectReference: {fileID: -7482273690767580696, guid: be45c2d8f4a286d4cb1d6744c05baf78, type: 3}
     - target: {fileID: 3626646710864104832, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -54,7 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462693302948370386, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_Name
-      value: Bigfish
+      value: Foul
+      objectReference: {fileID: 0}
+    - target: {fileID: 7809108336399791423, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

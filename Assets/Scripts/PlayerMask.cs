@@ -20,7 +20,7 @@ public class PlayerMask : ScriptableObject
     {
         if (asset)
             currentAsset = Instantiate(asset, me.transform);
-        Process.Invoke(me);
+        Process?.Invoke(me);
     }
 
     public void Unequip(PlayerAction me)
@@ -34,7 +34,10 @@ public class PlayerMask : ScriptableObject
     LineRenderer laserLine;
     public void ProcessLaser(PlayerAction me)
     {
-        if (!laserLine) laserLine = currentAsset.GetComponentInChildren<LineRenderer>();
+        if (!laserLine)
+        {
+            laserLine = currentAsset.GetComponentInChildren<LineRenderer>();
+        }
 
         if (Input.GetButton("Fire1"))
         {
@@ -87,6 +90,45 @@ public class PlayerMask : ScriptableObject
 
                 cooldownTimer = cooldown;
             }
+        }
+        cooldownTimer = Mathf.Max(cooldownTimer - Time.deltaTime, 0);
+    }
+
+    public void ProcessRain(PlayerAction me)
+    {
+        return;
+
+        if (!laserLine)
+        {
+            laserLine = currentAsset.GetComponentInChildren<LineRenderer>();
+        }
+
+        if (Input.GetButton("Fire1"))
+        {
+            laserLine.SetPosition(0, Vector2.zero);
+            laserLine.SetPosition(1, me.Cursor.transform.position - me.transform.position);
+
+            if (cooldownTimer <= 0)
+            {
+                RaycastHit2D[] hits = Physics2D.RaycastAll(
+                    me.transform.position,
+                    (me.Cursor.transform.position - me.transform.position),
+                    (me.Cursor.transform.position - me.transform.position).magnitude);
+                for (int i = 0; i < hits.Length; i++)
+                {
+                    Health victim = hits[i].collider.GetComponent<Health>();
+                    if (victim && victim.Alignment == Health.Teams.Evil)
+                    {
+                        victim.TakeDamage(damage);
+                        cooldownTimer = cooldown;
+                    }
+                }
+            }
+        }
+        else
+        {
+            laserLine.SetPosition(0, Vector3.zero);
+            laserLine.SetPosition(1, Vector3.zero);
         }
         cooldownTimer = Mathf.Max(cooldownTimer - Time.deltaTime, 0);
     }

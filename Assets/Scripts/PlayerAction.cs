@@ -47,7 +47,7 @@ public class PlayerAction : MonoBehaviour
             SetMask(currentMaskIndex);
 
         if (CurrentMask)
-            CurrentMask.Process.Invoke(this);
+            CurrentMask.Process?.Invoke(this);
     }
 
     void SetMask(int index)

@@ -25,7 +25,8 @@ public class Health : MonoBehaviour
 
     public void TakePercentualDamage(float percent)
     {
-        currentHealth -= Mathf.Max(currentHealth - (maxHealth * percent), 0);
+        print(percent + ", " + maxHealth * percent + ", " + currentHealth);
+        TakeDamage(maxHealth * percent);
     }
 
     public void TakeKnockback(Vector2 knockback)
