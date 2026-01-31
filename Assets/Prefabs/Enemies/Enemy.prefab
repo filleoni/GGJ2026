@@ -86,6 +86,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.4
   health: {fileID: 0}
+  sideStep: 0.25
+  sideStep2: 0.05
+  stopDistance: 0.2
 --- !u!114 &6492394304509396658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +183,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 028afe2bc722f40409956eee55df17a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

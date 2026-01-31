@@ -64,6 +64,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 887582166754057728, guid: cd1272381fadd1846bfff79f2d0da06e, type: 3}
+    - target: {fileID: 5956527035248041269, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: sideStep
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956527035248041269, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: sideStep2
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956527035248041269, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: movementSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6059067065674270331, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_Radius
       value: 0.27

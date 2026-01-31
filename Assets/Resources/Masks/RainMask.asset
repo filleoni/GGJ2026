@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RainMask
   m_EditorClassIdentifier: 
   name: Purifier
-  image: {fileID: 21300000, guid: 77f82914c6f1956449b0284441f453b0, type: 3}
+  image: {fileID: 21300000, guid: e76b4233e4efdf54590727752f0a68c2, type: 3}
   damage: 5
   cooldown: 1
   Process:

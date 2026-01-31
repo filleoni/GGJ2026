@@ -19,9 +19,11 @@ public class CameraMovement : MonoBehaviour
         int amount = 0;
         for (int i = 0; i < target.Count; i++)
         {
-            newPos += target[i].position / 1.5f;
+            newPos += target[i].position;
             amount ++;
         }
+        newPos.x /= 1.5f;
+        newPos.y /= 1.3f;
         newPos /= amount;
 
         transform.position = Vector3.Lerp(transform.position, newPos + followOffset, Time.deltaTime * followSpeed);
