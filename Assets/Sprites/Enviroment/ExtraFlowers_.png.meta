@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 33aebea9ab8bb8a48b5d1ad9589c7ff3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3649513217943484708
+    second: ExtraFlowers__0
+  - first:
+      213: 7941169972196044320
+    second: ExtraFlowers__1
+  - first:
+      213: -7121242065769421404
+    second: ExtraFlowers__2
+  - first:
+      213: -8447265446191270054
+    second: ExtraFlowers__3
+  - first:
+      213: 5004403022672801083
+    second: ExtraFlowers__4
+  - first:
+      213: -1032781853544108283
+    second: ExtraFlowers__5
+  - first:
+      213: -1703767271994055297
+    second: ExtraFlowers__6
+  - first:
+      213: 8321835317910552285
+    second: ExtraFlowers__7
+  - first:
+      213: -2996514518870306983
+    second: ExtraFlowers__8
+  - first:
+      213: -2246535197719605873
+    second: ExtraFlowers__9
+  - first:
+      213: -618628935283977450
+    second: ExtraFlowers__10
+  - first:
+      213: -5212222186535182937
+    second: ExtraFlowers__11
+  - first:
+      213: 764992668863825265
+    second: ExtraFlowers__12
+  - first:
+      213: -7601601122737616626
+    second: ExtraFlowers__13
+  - first:
+      213: -985339389196237769
+    second: ExtraFlowers__14
+  - first:
+      213: 3406776331921491724
+    second: ExtraFlowers__15
+  - first:
+      213: 5712382928390859110
+    second: ExtraFlowers__16
+  - first:
+      213: -901873056448912050
+    second: ExtraFlowers__17
+  - first:
+      213: 4858274154165693151
+    second: ExtraFlowers__18
+  - first:
+      213: 4874082431454082399
+    second: ExtraFlowers__19
+  - first:
+      213: -7590231831320289974
+    second: ExtraFlowers__20
+  - first:
+      213: 1572621801207434378
+    second: ExtraFlowers__21
+  - first:
+      213: -6057371166198608964
+    second: ExtraFlowers__22
+  - first:
+      213: -7188524787309762315
+    second: ExtraFlowers__23
+  - first:
+      213: 7346746778618482865
+    second: ExtraFlowers__24
+  - first:
+      213: -6717541974961683329
+    second: ExtraFlowers__25
+  - first:
+      213: 6478417062618508941
+    second: ExtraFlowers__26
+  - first:
+      213: 8232170758238837038
+    second: ExtraFlowers__27
+  - first:
+      213: 617112870259311401
+    second: ExtraFlowers__28
+  - first:
+      213: -6628177188162732330
+    second: ExtraFlowers__29
+  - first:
+      213: -8248463605974547218
+    second: ExtraFlowers__30
+  - first:
+      213: 1790204953521193224
+    second: ExtraFlowers__31
+  - first:
+      213: 2665722800770818093
+    second: ExtraFlowers__32
+  - first:
+      213: -3775116700240620926
+    second: ExtraFlowers__33
+  - first:
+      213: 3319697764259972254
+    second: ExtraFlowers__34
+  - first:
+      213: -1577782518470883064
+    second: ExtraFlowers__35
+  - first:
+      213: 7708440677153379702
+    second: ExtraFlowers__36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExtraFlowers__0
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 832
+        width: 16
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4293d9e8feca5a230800000000000000
+      internalID: 3649513217943484708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__1
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 841
+        width: 10
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e6ebdf304b43e60800000000000000
+      internalID: 7941169972196044320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__2
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 886
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5ae3632144c2d90800000000000000
+      internalID: -7121242065769421404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__3
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 846
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57765c05d845ca80800000000000000
+      internalID: -8447265446191270054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__4
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 837
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dad4fd806337540800000000000000
+      internalID: 5004403022672801083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__5
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 862
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fa8094062daa1f0800000000000000
+      internalID: -1032781853544108283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__6
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 838
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75abdc61b00b58e0800000000000000
+      internalID: -1703767271994055297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__7
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 804
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddebb5371291d7370800000000000000
+      internalID: 8321835317910552285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__8
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 821
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f4f6adbed3a66d0800000000000000
+      internalID: -2996514518870306983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__9
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 739
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8dc28ce324b2d0e0800000000000000
+      internalID: -2246535197719605873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__10
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 723
+        width: 37
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613de90d2403a67f0800000000000000
+      internalID: -618628935283977450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__11
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 763
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad192179877aa7b0800000000000000
+      internalID: -5212222186535182937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__12
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 769
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175086b77cccd9a00800000000000000
+      internalID: 764992668863825265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__13
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 755
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09830bcd00b18690800000000000000
+      internalID: -7601601122737616626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__14
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 703
+        width: 44
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73402cbcb0f5352f0800000000000000
+      internalID: -985339389196237769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__15
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 720
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c078365260d474f20800000000000000
+      internalID: 3406776331921491724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__16
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 681
+        width: 9
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6692eb30206764f40800000000000000
+      internalID: 5712382928390859110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__17
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 719
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45edd5cb37eb73f0800000000000000
+      internalID: -901873056448912050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__18
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 651
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdae18c5a9e0c6340800000000000000
+      internalID: 4858274154165693151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__19
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 735
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55faccb52834a340800000000000000
+      internalID: 4874082431454082399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__20
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 702
+        width: 18
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d9a4b3d541aa690800000000000000
+      internalID: -7590231831320289974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__21
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 692
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c0103323313d510800000000000000
+      internalID: 1572621801207434378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__22
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 685
+        width: 14
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbc9068405efeba0800000000000000
+      internalID: -6057371166198608964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__23
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 680
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8af49daca3d3c90800000000000000
+      internalID: -7188524787309762315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__24
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 649
+        width: 39
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0dc4a3543e4f560800000000000000
+      internalID: 7346746778618482865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__25
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 707
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7402a23a2f76c2a0800000000000000
+      internalID: -6717541974961683329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__26
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 630
+        width: 62
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ea43c8ef5f7e950800000000000000
+      internalID: 6478417062618508941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__27
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 586
+        width: 69
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e291f2f40bb8e3270800000000000000
+      internalID: 8232170758238837038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__28
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 647
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923c02ac2ec609800800000000000000
+      internalID: 617112870259311401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__29
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 644
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de763707fbf304a0800000000000000
+      internalID: -6628177188162732330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__30
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 655
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee446277d02978d80800000000000000
+      internalID: -8248463605974547218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__31
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 554
+        width: 73
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80186c99be518d810800000000000000
+      internalID: 1790204953521193224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__32
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 628
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20aa9183cc8ef420800000000000000
+      internalID: 2665722800770818093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__33
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 620
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2825380dc571c9bc0800000000000000
+      internalID: -3775116700240620926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__34
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 539
+        width: 6
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94cf50378fe11e20800000000000000
+      internalID: 3319697764259972254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__35
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 546
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809c8bda8279a1ae0800000000000000
+      internalID: -1577782518470883064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExtraFlowers__36
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 46
+        width: 55
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67516ed64f1e9fa60800000000000000
+      internalID: 7708440677153379702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ExtraFlowers__0: 3649513217943484708
+      ExtraFlowers__1: 7941169972196044320
+      ExtraFlowers__10: -618628935283977450
+      ExtraFlowers__11: -5212222186535182937
+      ExtraFlowers__12: 764992668863825265
+      ExtraFlowers__13: -7601601122737616626
+      ExtraFlowers__14: -985339389196237769
+      ExtraFlowers__15: 3406776331921491724
+      ExtraFlowers__16: 5712382928390859110
+      ExtraFlowers__17: -901873056448912050
+      ExtraFlowers__18: 4858274154165693151
+      ExtraFlowers__19: 4874082431454082399
+      ExtraFlowers__2: -7121242065769421404
+      ExtraFlowers__20: -7590231831320289974
+      ExtraFlowers__21: 1572621801207434378
+      ExtraFlowers__22: -6057371166198608964
+      ExtraFlowers__23: -7188524787309762315
+      ExtraFlowers__24: 7346746778618482865
+      ExtraFlowers__25: -6717541974961683329
+      ExtraFlowers__26: 6478417062618508941
+      ExtraFlowers__27: 8232170758238837038
+      ExtraFlowers__28: 617112870259311401
+      ExtraFlowers__29: -6628177188162732330
+      ExtraFlowers__3: -8447265446191270054
+      ExtraFlowers__30: -8248463605974547218
+      ExtraFlowers__31: 1790204953521193224
+      ExtraFlowers__32: 2665722800770818093
+      ExtraFlowers__33: -3775116700240620926
+      ExtraFlowers__34: 3319697764259972254
+      ExtraFlowers__35: -1577782518470883064
+      ExtraFlowers__36: 7708440677153379702
+      ExtraFlowers__4: 5004403022672801083
+      ExtraFlowers__5: -1032781853544108283
+      ExtraFlowers__6: -1703767271994055297
+      ExtraFlowers__7: 8321835317910552285
+      ExtraFlowers__8: -2996514518870306983
+      ExtraFlowers__9: -2246535197719605873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
