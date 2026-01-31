@@ -49,18 +49,22 @@ MonoBehaviour:
       settingExpandBase: 1
       settingsExpandAdvanced: 0
       disablePlayingSounds: 0
-      integrationEnableSteamAudio: 0
-      integrationEnablePlayMaker: 0
+      asyncStartup: 0
+      steamAudioIntegrationEnable: 0
+      steamAudioSpatializeEnabledDefault: 1
+      entitySoundIntegrationEnable: 0
+      playmakerIntegrationEnable: 0
       soundTimeScale: 0
       globalPause: 0
       globalVolumeRatio: 1
       globalVolumeDecibel: 0
-      volumeIncreaseEnable: 0
+      volumeIncreaseEnable: 1
       dontDestroyOnLoad: 1
       debugWarnings: 1
       debugInPlayMode: 1
       guiWarnings: 1
-      adressableAudioMixerUse: 0
+      addressableAudioMixerUse: 0
+      addressableAudioMixerAsyncLoadInEditor: 0
       globalSoundTag: {fileID: 0}
       distanceScale: 1
       overrideListenerDistance: 0
