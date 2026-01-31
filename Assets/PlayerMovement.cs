@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float speed;
+    [SerializeField] float movementSpeed;
 
     Vector2 currentVelocity;
     Vector2 desiredVelocity;
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
         if (currentVelocity.magnitude <= 0)
             currentVelocity = Vector2.Lerp(currentVelocity, Vector2.zero, Time.deltaTime * 5f);
 
-        transform.position += (Vector3)currentVelocity * Time.deltaTime * speed;
+        transform.position += (Vector3)currentVelocity * Time.deltaTime * movementSpeed;
     }
 
 }

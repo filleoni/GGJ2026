@@ -26,7 +26,7 @@ public class PlayerAction : MonoBehaviour
     void ProcessInput()
     {
         bool changed = false;
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetButtonDown("NextMask"))
         {
             currentMaskIndex++;
             if (currentMaskIndex >= masks.Count)
@@ -34,7 +34,7 @@ public class PlayerAction : MonoBehaviour
 
             changed = true;
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetButtonDown("PreviousMask"))
         {
             currentMaskIndex--;
             if (currentMaskIndex < 0)
