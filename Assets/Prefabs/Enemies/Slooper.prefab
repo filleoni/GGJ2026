@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 754274930832777441, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -7482273690767580696, guid: be45c2d8f4a286d4cb1d6744c05baf78, type: 3}
+      objectReference: {fileID: -4545301984697022622, guid: 2ea85dee9bd606e46904e2286b2b7b9d, type: 3}
     - target: {fileID: 3626646710864104832, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462693302948370386, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_Name
-      value: Foul
+      value: Slooper
       objectReference: {fileID: 0}
     - target: {fileID: 7809108336399791423, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_IsActive
@@ -62,7 +62,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8350549445857845756, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: maxHealth
-      value: 40
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886542718998952571, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: movementSpeed
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

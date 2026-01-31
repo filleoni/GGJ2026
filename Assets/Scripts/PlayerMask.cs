@@ -41,9 +41,11 @@ public class PlayerMask : ScriptableObject
 
         if (Input.GetButton("Fire1"))
         {
+            Vector2 offset = Random.insideUnitCircle * 0.1f;
+
             laserLine.enabled = true;
-            laserLine.SetPosition(0, Vector2.zero);
-            laserLine.SetPosition(1, me.Cursor.transform.position - me.transform.position);
+            laserLine.SetPosition(0, Vector2.zero + Random.insideUnitCircle * 0.02f);
+            laserLine.SetPosition(1, me.Cursor.transform.position - me.transform.position + (Vector3)(Random.insideUnitCircle * 0.05f));
 
             if (cooldownTimer <= 0)
             {

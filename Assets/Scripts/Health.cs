@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class Health : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class Health : MonoBehaviour
 
     public enum Teams { Good, Evil }
     public Teams Alignment = Teams.Evil;
+
+    [SerializeField] List<GameObject> drops = new();
 
     float currentHealth = 1;
     public UnityEvent<Vector2> SignalKnockback;
@@ -44,6 +47,18 @@ public class Health : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            for (int i = 0; i < drops.Count; i++)
+            {
+                float factor = i / (float)(drops.Count);
+
+                GameObject d = Instantiate(drops[i], transform);
+                d.transform.SetParent(null);
+                Star star = d.GetComponent<Star>();
+                if (star)
+                {
+                    star.SetInitialForce((new Vector2(Mathf.Sin(Mathf.Deg2Rad * factor * 360), Mathf.Cos(Mathf.Deg2Rad * factor * 360)) + Random.insideUnitCircle * 0.5f) * 0.02f);
+                }
+            }
             Destroy(gameObject);
         }
     }
