@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 55af9fd7c51914b4aa88b0e63edfd1d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5097698647602753884
+    second: Flowersv2_0
+  - first:
+      213: 5947328390387600723
+    second: Flowersv2_1
+  - first:
+      213: 8606684399151527266
+    second: Flowersv2_2
+  - first:
+      213: 7892635684147505861
+    second: Flowersv2_3
+  - first:
+      213: 4374386177903718643
+    second: Flowersv2_4
+  - first:
+      213: 6725388932524119601
+    second: Flowersv2_5
+  - first:
+      213: -2206182052630228323
+    second: Flowersv2_6
+  - first:
+      213: 5356968616462105947
+    second: Flowersv2_7
+  - first:
+      213: -5903108062612024363
+    second: Flowersv2_8
+  - first:
+      213: -8900046530367906459
+    second: Flowersv2_9
+  - first:
+      213: -747448953770551297
+    second: Flowersv2_10
+  - first:
+      213: -5753832270235130242
+    second: Flowersv2_11
+  - first:
+      213: 1981113124491529980
+    second: Flowersv2_12
+  - first:
+      213: 1713439817622449560
+    second: Flowersv2_13
+  - first:
+      213: 6575589819094045051
+    second: Flowersv2_14
+  - first:
+      213: 1888182585010981155
+    second: Flowersv2_15
+  - first:
+      213: -452635209405346065
+    second: Flowersv2_16
+  - first:
+      213: 7059391789590289684
+    second: Flowersv2_17
+  - first:
+      213: 6806918601602062638
+    second: Flowersv2_18
+  - first:
+      213: -3761883952323010936
+    second: Flowersv2_19
+  - first:
+      213: 3053468958142808473
+    second: Flowersv2_20
+  - first:
+      213: 2882646085977405256
+    second: Flowersv2_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flowersv2_0
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 758
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae06a9b6165149b0800000000000000
+      internalID: -5097698647602753884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 658
+        width: 93
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d06a729a7298250800000000000000
+      internalID: 5947328390387600723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_2
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 736
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265b2516cd5117770800000000000000
+      internalID: 8606684399151527266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_3
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 704
+        width: 91
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca2f277656488d60800000000000000
+      internalID: 7892635684147505861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_4
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 782
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f074546d01f4bc30800000000000000
+      internalID: 4374386177903718643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_5
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 734
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136917bf991655d50800000000000000
+      internalID: 6725388932524119601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_6
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 727
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92122bac111261e0800000000000000
+      internalID: -2206182052630228323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_7
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 753
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5db3210396c75a40800000000000000
+      internalID: 5356968616462105947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_8
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 648
+        width: 20
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d314493e72f31ea0800000000000000
+      internalID: -5903108062612024363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_9
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 718
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d19f8c5deac7480800000000000000
+      internalID: -8900046530367906459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_10
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 672
+        width: 7
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7d4cef22780a5f0800000000000000
+      internalID: -747448953770551297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_11
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 718
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76a47b09084620b0800000000000000
+      internalID: -5753832270235130242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_12
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 655
+        width: 13
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe8e2de3e35e7b10800000000000000
+      internalID: 1981113124491529980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_13
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 642
+        width: 11
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d65699f6c57c710800000000000000
+      internalID: 1713439817622449560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_14
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 565
+        width: 33
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7196cbf910314b50800000000000000
+      internalID: 6575589819094045051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_15
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 672
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32988aa9e0c243a10800000000000000
+      internalID: 1888182585010981155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_16
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 551
+        width: 42
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee4f8adcaae7b9f0800000000000000
+      internalID: -452635209405346065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_17
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 552
+        width: 28
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d96dc2e6ff7f160800000000000000
+      internalID: 7059391789590289684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_18
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 495
+        width: 112
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e295d7f4768077e50800000000000000
+      internalID: 6806918601602062638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_19
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 544
+        width: 112
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e5b870a7a1bcbc0800000000000000
+      internalID: -3761883952323010936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_20
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 556
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991c8c6e6d9106a20800000000000000
+      internalID: 3053468958142808473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowersv2_21
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 563
+        width: 27
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8477adf9757310820800000000000000
+      internalID: 2882646085977405256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Flowersv2_0: -5097698647602753884
+      Flowersv2_1: 5947328390387600723
+      Flowersv2_10: -747448953770551297
+      Flowersv2_11: -5753832270235130242
+      Flowersv2_12: 1981113124491529980
+      Flowersv2_13: 1713439817622449560
+      Flowersv2_14: 6575589819094045051
+      Flowersv2_15: 1888182585010981155
+      Flowersv2_16: -452635209405346065
+      Flowersv2_17: 7059391789590289684
+      Flowersv2_18: 6806918601602062638
+      Flowersv2_19: -3761883952323010936
+      Flowersv2_2: 8606684399151527266
+      Flowersv2_20: 3053468958142808473
+      Flowersv2_21: 2882646085977405256
+      Flowersv2_3: 7892635684147505861
+      Flowersv2_4: 4374386177903718643
+      Flowersv2_5: 6725388932524119601
+      Flowersv2_6: -2206182052630228323
+      Flowersv2_7: 5356968616462105947
+      Flowersv2_8: -5903108062612024363
+      Flowersv2_9: -8900046530367906459
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
