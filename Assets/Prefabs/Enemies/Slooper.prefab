@@ -62,12 +62,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8350549445857845756, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: maxHealth
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.325
+      objectReference: {fileID: 0}
+    - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8886542718998952571, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: movementSpeed
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 8886542718998952571, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: UncursedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8030d0083b392c841ba6ad223879d19b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

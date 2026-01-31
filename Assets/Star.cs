@@ -31,13 +31,14 @@ public class Star : MonoBehaviour
             for (int i = 0; i < followedFragments.Count; i++)
             {
                 Star frag = followedFragments[i];
-                if (Vector3.Distance(frag.transform.position, transform.position) < 0.1f)
+                if (Vector3.Distance(frag.transform.position, transform.position) < 0.03f)
                 {
                     followedFragments.Remove(frag);
                     Destroy(frag.gameObject);
                     i--;
                 }
 
+                frag.currentVelocity *= Mathf.Min(Vector3.Distance(frag.transform.position, transform.position), 1);
                 frag.currentVelocity += (Vector2)(transform.position - frag.transform.position).normalized * Time.deltaTime * 0.1f;
             }
             currentVelocity = Vector2.zero;

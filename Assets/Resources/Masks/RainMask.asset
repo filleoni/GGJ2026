@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Purifier
   image: {fileID: 21300000, guid: e76b4233e4efdf54590727752f0a68c2, type: 3}
-  damage: 5
-  cooldown: 1
+  damage: 35
+  cooldown: 0.2
+  effectRange: 0.85
   Process:
     m_PersistentCalls:
       m_Calls:
@@ -31,4 +32,4 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  asset: {fileID: 0}
+  asset: {fileID: 8694414325751750033, guid: 3f49067142716bd419373be799954abc, type: 3}

@@ -9,6 +9,7 @@ public class PlayerMask : ScriptableObject
 
     public int damage = 5;
     public float cooldown = 1;
+    public float effectRange = 1;
 
     public UnityEvent<PlayerAction> Process;
     [SerializeField] GameObject asset;
@@ -44,7 +45,7 @@ public class PlayerMask : ScriptableObject
             Vector2 offset = Random.insideUnitCircle * 0.1f;
 
             laserLine.enabled = true;
-            laserLine.SetPosition(0, Vector2.zero + Random.insideUnitCircle * 0.02f);
+            laserLine.SetPosition(0, Vector2.zero + Random.insideUnitCircle * 0.007f);
             laserLine.SetPosition(1, me.Cursor.transform.position - me.transform.position + (Vector3)(Random.insideUnitCircle * 0.05f));
 
             if (cooldownTimer <= 0)
@@ -56,7 +57,7 @@ public class PlayerMask : ScriptableObject
                 for (int i = 0; i < hits.Length; i++)
                 {
                     Health victim = hits[i].collider.GetComponent<Health>();
-                    if (victim && victim.Alignment == Health.Teams.Evil)
+                    if (victim && victim.Alignment != Health.Teams.Good)
                     {
                         victim.TakeDamage(damage);
                         cooldownTimer = cooldown;
@@ -100,30 +101,29 @@ public class PlayerMask : ScriptableObject
 
     public void ProcessRain(PlayerAction me)
     {
-        return;
 
-        if (!laserLine)
-        {
-            laserLine = currentAsset.GetComponentInChildren<LineRenderer>();
-        }
 
         if (Input.GetButton("Fire1"))
         {
-            laserLine.SetPosition(0, Vector2.zero);
-            laserLine.SetPosition(1, me.Cursor.transform.position - me.transform.position);
+            if (!currentAsset.activeInHierarchy)
+            {
+                currentAsset.SetActive(true);
+            }
+            Vector2 mouePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            currentAsset.transform.position = mouePos;
 
             if (cooldownTimer <= 0)
             {
-                RaycastHit2D[] hits = Physics2D.RaycastAll(
-                    me.transform.position,
-                    (me.Cursor.transform.position - me.transform.position),
-                    (me.Cursor.transform.position - me.transform.position).magnitude);
+                RaycastHit2D[] hits = Physics2D.CircleCastAll(
+                    mouePos,
+                    effectRange,
+                    Vector3.forward);
                 for (int i = 0; i < hits.Length; i++)
                 {
                     Health victim = hits[i].collider.GetComponent<Health>();
-                    if (victim && victim.Alignment == Health.Teams.Evil)
+                    if (victim && victim.Alignment != Health.Teams.Good)
                     {
-                        victim.TakeDamage(damage);
+                        victim.TakePoison(damage);
                         cooldownTimer = cooldown;
                     }
                 }
@@ -131,8 +131,7 @@ public class PlayerMask : ScriptableObject
         }
         else
         {
-            laserLine.SetPosition(0, Vector3.zero);
-            laserLine.SetPosition(1, Vector3.zero);
+            currentAsset.SetActive(false);
         }
         cooldownTimer = Mathf.Max(cooldownTimer - Time.deltaTime, 0);
     }
