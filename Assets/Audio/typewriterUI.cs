@@ -7,13 +7,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Sonity;
 
 public class typewriterUI : MonoBehaviour
 {
 	TMP_Text _tmpProText;
 	string writer;
 	[SerializeField] Image _bgImage;
-    
+	[SerializeField] private SoundEvent soundEvent;
+
+
 	[SerializeField] float delayBeforeStart = 0f;
 	[SerializeField] float timeBtwChars = 0.1f;
 	[SerializeField] string leadingChar = "";
@@ -31,6 +34,8 @@ public class typewriterUI : MonoBehaviour
 
 			StartCoroutine("TypeWriterTMP");
 		}
+
+
 	}
 
 	IEnumerator TypeWriterTMP()
@@ -38,6 +43,8 @@ public class typewriterUI : MonoBehaviour
         _tmpProText.text = leadingCharBeforeDelay ? leadingChar : "";
 
         yield return new WaitForSeconds(delayBeforeStart);
+
+		soundEvent.Play(transform);
 
 		foreach (char c in writer)
 		{
@@ -47,9 +54,11 @@ public class typewriterUI : MonoBehaviour
 			}
 			_tmpProText.text += c;
 			_tmpProText.text += leadingChar;
-			
+
 			yield return new WaitForSeconds(timeBtwChars);
 		}
+
+		soundEvent.Stop(transform);
 
 		StartCoroutine(FishEyeFade());
 		
@@ -61,6 +70,8 @@ public class typewriterUI : MonoBehaviour
 
 	IEnumerator FishEyeFade()
 	{
+
+		
 		while (_tmpProText.color.a > 0)
 		{
 			_tmpProText.color = _tmpProText.color - new Color(0, 0, 0, Time.deltaTime);
