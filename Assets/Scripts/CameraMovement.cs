@@ -22,6 +22,8 @@ public class CameraMovement : MonoBehaviour
             newPos += target[i].position;
             amount ++;
         }
+        newPos.x /= 1.5f;
+        newPos.y /= 1.3f;
         newPos /= amount;
 
         transform.position = Vector3.Lerp(transform.position, newPos + followOffset, Time.deltaTime * followSpeed);

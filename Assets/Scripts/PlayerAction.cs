@@ -10,7 +10,7 @@ public class PlayerAction : MonoBehaviour
     public Cursor Cursor;
     int currentMaskIndex = 0;
 
-    PlayerMask CurrentMask => masks[Mathf.Clamp(currentMaskIndex, 0, masks.Count - 1)];
+    PlayerMask CurrentMask = null;
 
     void Start()
     {
@@ -47,12 +47,18 @@ public class PlayerAction : MonoBehaviour
             SetMask(currentMaskIndex);
 
         if (CurrentMask)
-            CurrentMask.Process.Invoke(this);
+            CurrentMask.Process?.Invoke(this);
     }
 
     void SetMask(int index)
     {
         currentMaskIndex = index;
+
+        if (CurrentMask)
+            CurrentMask.Unequip(this);
+
+        CurrentMask = masks[currentMaskIndex];
+        CurrentMask.Equip(this);
 
         maskVisual.sprite = CurrentMask.image;
     }

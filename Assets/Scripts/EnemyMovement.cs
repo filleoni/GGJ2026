@@ -3,12 +3,25 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float movementSpeed;
+    [SerializeField] Health health;
+    [SerializeField, Range(-1, 1)] float sideStep;
+    [SerializeField, Range(-1, 1)] float sideStep2;
+    [SerializeField] float stopDistance;
 
     Transform target;
+    float ss;
 
     void Start()
     {
         target = Object.FindFirstObjectByType<LifeTree>().transform;
+        if (!health)
+        {
+            health = GetComponent<Health>();
+            if (health)
+                health.SignalKnockback.AddListener((v) => { currentVelocity += (Vector3)v; });
+        }
+
+        ss = Random.Range(sideStep, sideStep2) * (Random.Range(1, 100) >= 50 ? -1 : 1);
     }
 
     Vector3 desiredPosition;
@@ -21,11 +34,16 @@ public class EnemyMovement : MonoBehaviour
             return;
 
         desiredPosition = target.position;
-        desiredVelocity = (desiredPosition - transform.position);
-        if (desiredVelocity.magnitude > 1)
-            desiredVelocity /= desiredVelocity.magnitude;
+        desiredVelocity = Quaternion.AngleAxis(-90 * ss, Vector3.forward) * (desiredPosition - transform.position).normalized;
+        if ((desiredPosition - transform.position).magnitude < stopDistance)
+            desiredVelocity = Vector2.zero;
 
         currentVelocity = Vector3.Lerp(currentVelocity, desiredVelocity, Time.deltaTime * 5);
         transform.position += currentVelocity * Time.deltaTime * movementSpeed;
+
+        if (currentVelocity.magnitude > 0.1)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(-currentVelocity.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 }
