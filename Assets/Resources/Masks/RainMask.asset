@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Purifier
   image: {fileID: 21300000, guid: e76b4233e4efdf54590727752f0a68c2, type: 3}
-  damage: 3
+  damage: 5
   cooldown: 0.2
   effectRange: 0.5
   Process:

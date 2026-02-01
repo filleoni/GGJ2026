@@ -10,16 +10,24 @@ public class Star : MonoBehaviour
     [SerializeField] float lifetime;
     [SerializeField] float speedScale;
     [SerializeField] float damping = 5;
+    [SerializeField] AnimationCurve velocityOverTime;
 
     Vector2 initialForce;
     public Vector2 currentVelocity;
 
     float time = 0;
 
+    [SerializeField] SpriteRenderer sprite;
     static List<Star> currentFragments = new();
     List<Star> followedFragments = new();
 
     public static UnityEvent SignalScore = new();
+
+    private void Start()
+    {
+        if (!sprite)
+            sprite = GetComponent<SpriteRenderer>();
+    }
 
     public void SetInitialForce(Vector2 force)
     {
@@ -49,7 +57,7 @@ public class Star : MonoBehaviour
             }
             fragCenter /= followedFragments.Count;
 
-            for (int i = 0; i <= followedFragments.Count; i++)
+            for (int i = 0; i <= followedFragments.Count - 1; i++) // Remvoe -1 to include self
             {
                 Star frag;
                 if (i == followedFragments.Count)
@@ -65,6 +73,7 @@ public class Star : MonoBehaviour
                     }
                 }
 
+                fragCenter = transform.position;
                 // frag.currentVelocity *= 0.96f;
                 frag.transform.position = Vector2.MoveTowards(frag.transform.position, fragCenter, Time.deltaTime * 5f);
             }
@@ -94,10 +103,13 @@ public class Star : MonoBehaviour
 
         if (!creates)
         {
-            currentVelocity += Vector2.up * Time.deltaTime * 0.05f;
-            transform.up = Vector2.right;
-            transform.localScale = new Vector2(1 / Mathf.Max(currentVelocity.y, 0.5f), 1 * Mathf.Max(currentVelocity.y, 1));
-            if (currentVelocity.y >= 10)
+            float vel = velocityOverTime.Evaluate(time);
+            currentVelocity.y = vel;
+            transform.up = Vector2.up;
+            transform.localScale = new Vector2(1 / ((vel * 15) + 0.6f), 20 * vel);
+            if (time < 0.07f)
+                transform.localScale = new Vector2(3, 0.2f);
+            if (!sprite.isVisible)
             {
                 SignalScore?.Invoke();
                 Destroy(gameObject);
