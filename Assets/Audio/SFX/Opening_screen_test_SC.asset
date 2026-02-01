@@ -21,9 +21,9 @@ MonoBehaviour:
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
       settingsExpandBase: 1
-      settingsExpandAdvanced: 0
+      settingsExpandAdvanced: 1
       priority: 0.5
-      distanceEnabled: 1
+      distanceEnabled: 0
       distanceScale: 100
       preventEndClicks: 1
       loopEnabled: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
       bypassListenerEffects: 0
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
-      volumeExpand: 1
+      volumeExpand: 0
       volumeDecibel: 0
       volumeRatio: 1
       volumeRandomEnable: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       spatialBlendExpand: 0
-      spatialBlend: 1
+      spatialBlend: 0
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
       spatialBlendDistanceCurve:

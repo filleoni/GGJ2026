@@ -4,7 +4,8 @@ public class Cursor : MonoBehaviour
 {
     private void Start()
     {
-        transform.SetParent(null);    
+        transform.SetParent(null);  
+        gameObject.SetActive(false);  
     }
 
     void Update()

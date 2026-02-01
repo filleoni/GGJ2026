@@ -82,7 +82,7 @@ LineRenderer:
   - {x: 0, y: 0, z: -2}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1.8
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -426,7 +426,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.9
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2

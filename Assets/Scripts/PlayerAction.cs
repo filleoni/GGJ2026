@@ -15,6 +15,7 @@ public class PlayerAction : MonoBehaviour
     void Start()
     {
         SetMask(currentMaskIndex);
+        gameObject.SetActive(false);
     }
 
     private void Update()
