@@ -10,11 +10,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject cursor;
     [SerializeField] GameObject healthBar;
     [SerializeField] SoundEvent mainMusic;
-    
+    [SerializeField] SoundEvent startAmbiance;
+
     void Start()
     {
         cameraParent.GetComponent<Animation>().Play("CameraStart");
         enemySpawner.SetActive(false);
+        startAmbiance.Play(transform);
     }
     public void StartPan()
     {
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
         enemySpawner.SetActive(true);
         player.SetActive(true);
         healthBar.SetActive(true);
+        startAmbiance.Stop(transform,true);
         mainMusic.Play(transform);
         healthBar.SetActive(true);
     }
