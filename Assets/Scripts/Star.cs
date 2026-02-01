@@ -29,13 +29,23 @@ public class Star : MonoBehaviour
         }
     }
 
-    Vector3 fragCenter;
+    Vector3 fragCenter = Vector3.zero;
     void Update()
     {
         initialForce = Vector2.Lerp(initialForce, Vector2.zero, Time.deltaTime * damping);
 
         if (followedFragments.Count > 0)
         {
+            fragCenter = Vector2.zero;
+            for (int i = 0; i < followedFragments.Count; i++)
+            {
+                if (i == followedFragments.Count)
+                    fragCenter += transform.position;
+                else if (i < followedFragments.Count)
+                    fragCenter += followedFragments[i].transform.position;
+            }
+            fragCenter /= followedFragments.Count;
+
             for (int i = 0; i <= followedFragments.Count; i++)
             {
                 Star frag;
@@ -52,9 +62,8 @@ public class Star : MonoBehaviour
                     }
                 }
 
-                // frag.currentVelocity *= Mathf.Min(Vector3.Distance(frag.transform.position, transform.position), 1);
-                frag.currentVelocity *= 0.97f;
-                frag.currentVelocity += (Vector2)(fragCenter - frag.transform.position).normalized * Time.deltaTime * 0.4f;
+                // frag.currentVelocity *= 0.96f;
+                frag.currentVelocity = (Vector2)(fragCenter - frag.transform.position).normalized * Time.deltaTime * 0.4f;
             }
 
             if (followedFragments.Count <= 0)

@@ -27,7 +27,7 @@ public class Squiggly : MonoBehaviour
         {
             float factor = i / ((float)line.positionCount - 1);
 
-            line.SetPosition(i, Vector2.Lerp(followPosition, target.position, factor));
+            line.SetPosition(i, Vector2.Lerp(followPosition, target.position, factor)); // + Vector2.down * Mathf.Sin(factor * Mathf.Rad2Deg)); 
         }
     }
 }
