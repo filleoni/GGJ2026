@@ -5882,6 +5882,7 @@ MonoBehaviour:
   cursor: {fileID: 206266411}
   healthBar: {fileID: 415616860}
   mainMusic: {fileID: 11400000, guid: a505d29d5103f6442a89c1fc22710671, type: 2}
+  startAmbiance: {fileID: 11400000, guid: 17b20d5779b3a9341a68ce6a14a15469, type: 2}
 --- !u!1 &1372920947
 GameObject:
   m_ObjectHideFlags: 0
