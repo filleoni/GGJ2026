@@ -51,7 +51,9 @@ public class GravityBomb : MonoBehaviour
         
         particleSystem.Play();
         particleSystem.transform.SetParent(null);
-        
+
+        var sprite = GetComponent<SpriteRenderer>();
+        if (sprite) sprite.enabled = false;
 
         RaycastHit2D[] hits = Physics2D.CircleCastAll(
             transform.position,
