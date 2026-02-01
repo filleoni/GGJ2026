@@ -5,7 +5,7 @@ using Sonity;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] float maxHealth = 50;
+    public  float maxHealth = 50;
     [SerializeField] GameObject bar = null;
     public bool cursed = false;
     Vector3 barStartSize;
@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
 
     [SerializeField] List<GameObject> drops = new();
 
-    float currentHealth = 1;
+    public float currentHealth = 1;
     public UnityEvent<Vector2> SignalKnockback;
     public UnityEvent<bool> SignalUncursed;
 
