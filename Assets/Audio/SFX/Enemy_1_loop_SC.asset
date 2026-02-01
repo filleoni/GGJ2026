@@ -51,7 +51,7 @@ MonoBehaviour:
       volumeRatio: 1
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
-      volumeDistanceRolloff: -4
+      volumeDistanceRolloff: -3
       volumeDistanceCurve:
         serializedVersion: 2
         m_Curve:
