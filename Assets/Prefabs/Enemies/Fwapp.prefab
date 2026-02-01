@@ -105,6 +105,10 @@ PrefabInstance:
       value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: enemysound
+      value: 
+      objectReference: {fileID: 11400000, guid: 51a20eb66a4471b49b8d01e2c4d3d242, type: 2}
+    - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: drops.Array.size
       value: 1
       objectReference: {fileID: 0}

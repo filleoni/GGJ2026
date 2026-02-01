@@ -88,7 +88,7 @@ MonoBehaviour:
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
       polyphonyMode: 0
-      audioMixerGroup: {fileID: 0}
+      audioMixerGroup: {fileID: 24300002, guid: 48733d85c98e96444a00ece780ea6b4b, type: 2}
       soundVolumeGroup: {fileID: 0}
       soundMix: {fileID: 0}
       soundPolyGroup: {fileID: 0}

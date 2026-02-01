@@ -73,6 +73,14 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 11400000, guid: 660a70dc5e821604b82b72062a3dfeee, type: 2}
+    - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: enemysound
+      value: 
+      objectReference: {fileID: 11400000, guid: 8689fa31c75b7d5498cb22b6053c520e, type: 2}
+    - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: drops.Array.size
       value: 3
       objectReference: {fileID: 0}
