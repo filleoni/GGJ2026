@@ -50,26 +50,21 @@ public class Health : MonoBehaviour
                 curseTimer = curseTime;
             }
         }
-
-        if (currentHealth != maxHealth)
-            print(currentHealth);
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth = Mathf.Max(currentHealth - damage, 0);
+        currentHealth = Mathf.Max(currentHealth - damage * ((cursed && uncursed > 0) ? 3 : 1), 0);
         if (animator)
             animator.SetTrigger("Damaged");
 
         if (bar)
-            bar.transform.localScale = barStartSize * (currentHealth / maxHealth) * ((cursed && uncursed > 0) ? 3 : 1);
+            bar.transform.localScale = barStartSize * (currentHealth / maxHealth);
         CheckDeath();
     }
 
     public void TakePoison(float damage)
     {
-        print("OW");
-
         uncursed = damage;
         SignalUncursed.Invoke(true);
     }
@@ -89,6 +84,7 @@ public class Health : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            float angleOffset = Random.Range(0, 360);
             for (int i = 0; i < drops.Count; i++)
             {
                 float factor = i / (float)(drops.Count);
@@ -98,7 +94,7 @@ public class Health : MonoBehaviour
                 Star star = d.GetComponent<Star>();
                 if (star)
                 {
-                    star.SetInitialForce((new Vector2(Mathf.Sin(Mathf.Deg2Rad * factor * 360), Mathf.Cos(Mathf.Deg2Rad * factor * 360)) + Random.insideUnitCircle * 0.5f) * 0.02f);
+                    star.SetInitialForce(((Vector2)(Quaternion.AngleAxis(factor * 360 + angleOffset, Vector3.forward) * Vector3.right) + Random.insideUnitCircle * 0.1f) * 0.02f);
                 }
             }
             Destroy(gameObject);

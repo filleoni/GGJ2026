@@ -84,6 +84,30 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: drops.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: 'drops.Array.data[0]'
+      value: 
+      objectReference: {fileID: 400843338363961200, guid: 63b9afa5c4ebc864e8b1062e27a52dbe, type: 3}
+    - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: 'drops.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665264736334816491, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665264736334816491, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.657
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665264736334816491, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

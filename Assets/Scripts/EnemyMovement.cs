@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] float stopDistance;
     [SerializeField] Sprite UncursedSprite;
     [SerializeField] SpriteRenderer sprite;
+    [SerializeField] ParticleSystem cursedParticles;
 
     Sprite startSprite;
 
@@ -39,6 +40,7 @@ public class EnemyMovement : MonoBehaviour
     Vector3 desiredVelocity;
     Vector3 currentVelocity;
 
+    float emission;
     void UpdateCursed(bool uncursed)
     {
         if (!UncursedSprite)
@@ -46,6 +48,17 @@ public class EnemyMovement : MonoBehaviour
 
         if (sprite)
             sprite.sprite = uncursed ? UncursedSprite : startSprite;
+        if (cursedParticles != null)
+        {
+            if (uncursed)
+            {
+                cursedParticles.enableEmission = false;
+            }
+            else
+            {
+                cursedParticles.enableEmission = true;
+            }
+        }
     }
 
     void Update()

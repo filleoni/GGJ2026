@@ -52,18 +52,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4051351321257207813, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4051351321257207813, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.005
+      objectReference: {fileID: 0}
     - target: {fileID: 4462693302948370386, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_Name
       value: Slooper
       objectReference: {fileID: 0}
+    - target: {fileID: 6603083067652015126, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7809108336399791423, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8350549445857845756, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: maxHealth
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 8350549445857845756, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: drops.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350549445857845756, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: 'drops.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3863060098874228743, guid: 7492091c51cce6140b57ab33f2a4b6fd, type: 3}
     - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5

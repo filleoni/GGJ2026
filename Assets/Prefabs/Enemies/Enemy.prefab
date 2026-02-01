@@ -106,9 +106,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 25
   bar: {fileID: 8401545761763452308}
+  cursed: 0
   Alignment: 1
   drops: []
   SignalKnockback:
+    m_PersistentCalls:
+      m_Calls: []
+  SignalUncursed:
     m_PersistentCalls:
       m_Calls: []
 --- !u!95 &1200051305985312582
@@ -275,7 +279,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d5ce87484f30aa243a442a1f895ea56a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

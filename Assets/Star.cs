@@ -6,42 +6,56 @@ public class Star : MonoBehaviour
     public bool breaksInto;
     [SerializeField] GameObject creates;
     [SerializeField] int createAmount;
+    [SerializeField] float lifetime;
+    [SerializeField] float speedScale;
+    [SerializeField] float damping = 5;
 
     Vector2 initialForce;
-
     public Vector2 currentVelocity;
+
+    float time = 0;
 
     static List<Star> currentFragments = new();
     List<Star> followedFragments = new();
 
     public void SetInitialForce(Vector2 force)
     {
-        initialForce = force;
+        initialForce = force * speedScale;
 
         if (!breaksInto)
+        {
             AddToList();
+            transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+        }
     }
 
+    Vector3 fragCenter;
     void Update()
     {
-        initialForce = Vector2.Lerp(initialForce, Vector2.zero, Time.deltaTime * 5f);
+        initialForce = Vector2.Lerp(initialForce, Vector2.zero, Time.deltaTime * damping);
 
         if (followedFragments.Count > 0)
         {
-            for (int i = 0; i < followedFragments.Count; i++)
+            for (int i = 0; i <= followedFragments.Count; i++)
             {
-                Star frag = followedFragments[i];
-                if (Vector3.Distance(frag.transform.position, transform.position) < 0.03f)
+                Star frag;
+                if (i == followedFragments.Count)
+                    frag = this;
+                else
                 {
-                    followedFragments.Remove(frag);
-                    Destroy(frag.gameObject);
-                    i--;
+                    frag = followedFragments[i];
+                    if (Vector3.Distance(frag.transform.position, transform.position) < 0.03f)
+                    {
+                        followedFragments.Remove(frag);
+                        Destroy(frag.gameObject);
+                        i--;
+                    }
                 }
 
-                frag.currentVelocity *= Mathf.Min(Vector3.Distance(frag.transform.position, transform.position), 1);
-                frag.currentVelocity += (Vector2)(transform.position - frag.transform.position).normalized * Time.deltaTime * 0.1f;
+                // frag.currentVelocity *= Mathf.Min(Vector3.Distance(frag.transform.position, transform.position), 1);
+                frag.currentVelocity *= 0.97f;
+                frag.currentVelocity += (Vector2)(fragCenter - frag.transform.position).normalized * Time.deltaTime * 0.4f;
             }
-            currentVelocity = Vector2.zero;
 
             if (followedFragments.Count <= 0)
             {
@@ -51,30 +65,41 @@ public class Star : MonoBehaviour
             }
         }
 
-        if (breaksInto && initialForce.magnitude <= 0.1f)
+        if (breaksInto && initialForce.magnitude <= 0.03f && time >= lifetime)
         {
+            float angleOffset = Random.Range(0, 360);
             for (int i = 0; i < createAmount; i++)
             {
                 float factor = i / (float)(createAmount);
 
                 Star creation = Instantiate(creates, transform).GetComponent<Star>();
                 creation.transform.SetParent(null);
-                creation.SetInitialForce((new Vector2(Mathf.Sin(Mathf.Deg2Rad * factor * 360), Mathf.Cos(Mathf.Deg2Rad * factor * 360)) + Random.insideUnitCircle * 0.5f) * 0.02f);
+                creation.SetInitialForce(((Vector2)(Quaternion.AngleAxis(factor * 360 + angleOffset, Vector3.forward) * Vector3.right) + Random.insideUnitCircle * 0.1f) * 0.02f);
+
+                Destroy(gameObject);
             }
         }
 
-        transform.position += (Vector3)(currentVelocity + initialForce);
+        transform.position += (Vector3)(currentVelocity + initialForce) * Time.deltaTime * 100;
+        time += Time.deltaTime;
     }
 
     void AddToList()
     {
         if (currentFragments.Count < createAmount - 1)
             currentFragments.Add(this);
-        else 
+        else
+        {
+            fragCenter += transform.position;
             for (int i = 0; i < createAmount - 1; i++)
             {
+                fragCenter += currentFragments[0].transform.position;
+
                 followedFragments.Add(currentFragments[0]);
                 currentFragments.RemoveAt(0);
             }
+
+            fragCenter /= createAmount;
+        }
     }
 }
