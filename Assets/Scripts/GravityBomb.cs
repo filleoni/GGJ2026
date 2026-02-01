@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Sonity;
 
 public class GravityBomb : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class GravityBomb : MonoBehaviour
     Vector3 startPos;
     Vector3 targetPos;
     float timer = 0;
+
+    [SerializeField] private SoundEvent gravityBombSFX;
 
     public void SetTargetPosition(Vector2 pos)
     {
@@ -39,8 +42,12 @@ public class GravityBomb : MonoBehaviour
     List<Health> victims = new();
     IEnumerator Explode()
     {
+        gravityBombSFX.Play(transform);
+        Debug.Log("is boom");
+        
         particleSystem.Play();
         particleSystem.transform.SetParent(null);
+        
 
         RaycastHit2D[] hits = Physics2D.CircleCastAll(
             transform.position,

@@ -80,6 +80,7 @@ public class PlayerMask : ScriptableObject
             laserLine.enabled = false;
             laserLine.SetPosition(0, Vector3.zero);
             laserLine.SetPosition(1, Vector3.zero);
+            
             laserMask.Stop(me.transform, false);
         }
         cooldownTimer = Mathf.Max(cooldownTimer - Time.deltaTime, 0);
@@ -118,6 +119,8 @@ public class PlayerMask : ScriptableObject
             if (!currentAsset.activeInHierarchy)
             {
                 currentAsset.SetActive(true);
+                
+                rainMask.Play(me.transform);
             }
             Vector2 mouePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             currentAsset.transform.position = mouePos;
@@ -147,6 +150,7 @@ public class PlayerMask : ScriptableObject
         else
         {
             currentAsset.SetActive(false);
+            rainMask.Stop(me.transform);
         }
         cooldownTimer = Mathf.Max(cooldownTimer - Time.deltaTime, 0);
     }
