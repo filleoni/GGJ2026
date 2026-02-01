@@ -33,3 +33,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   asset: {fileID: 8694414325751750033, guid: 6857a7fb4936339409d5cdebe1f95be5, type: 3}
+  gravityMask: {fileID: 11400000, guid: 50623ca0aeb46ba4187efc51897a8b11, type: 2}
+  laserMask: {fileID: 0}
+  rainMask: {fileID: 0}
