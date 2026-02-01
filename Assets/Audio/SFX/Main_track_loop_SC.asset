@@ -23,7 +23,7 @@ MonoBehaviour:
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
       priority: 0.5
-      distanceEnabled: 1
+      distanceEnabled: 0
       distanceScale: 100
       preventEndClicks: 1
       loopEnabled: 1

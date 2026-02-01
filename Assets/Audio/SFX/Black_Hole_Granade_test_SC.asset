@@ -24,7 +24,7 @@ MonoBehaviour:
       settingsExpandAdvanced: 0
       priority: 0.5
       distanceEnabled: 1
-      distanceScale: 100
+      distanceScale: 10
       preventEndClicks: 1
       loopEnabled: 0
       followPosition: 0
