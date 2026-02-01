@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a97b626968b6c98489b1cb5bff10dde8
+guid: 4c3ec398076ce814da3e5a8b2b508a18
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3756676194919280011
-    second: Starblob_0
+      213: -3825927049379498496
+    second: HealthBarBorder_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Starblob_0
+      name: HealthBarBorder_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 63
-        height: 64
+        x: 52
+        y: 18
+        width: 781
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5729ba987ea9ddbc0800000000000000
-      internalID: -3756676194919280011
+      spriteID: 0063d258e9397eac0800000000000000
+      internalID: -3825927049379498496
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Starblob_0: -3756676194919280011
+      HealthBarBorder_0: -3825927049379498496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
