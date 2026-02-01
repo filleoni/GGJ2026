@@ -56,7 +56,7 @@ public class GravityBomb : MonoBehaviour
         for (int i = 0; i < hits.Length; i++)
         {
             Health victim = hits[i].collider.GetComponent<Health>();
-            if (victim && victim.Alignment == Health.Teams.Evil)
+            if (victim && victim.Alignment != Health.Teams.Good)
             {
                 victim.TakeKnockback((transform.position - victim.transform.position).normalized * 1);
                 victim.TakePercentualDamage(percentualDamage);

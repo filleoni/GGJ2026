@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: 3605231d658447645b98fe1299d02be8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f9265f96e244ce46a69c1e0d3a7d436, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2.5
-  playerRadius: 1.5
+  playerRadius: 2.1
 --- !u!114 &6268273176773203635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,9 +450,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masks:
-  - {fileID: 11400000, guid: 568284e5f3fd47b4fad91bbacf90f986, type: 2}
   - {fileID: 11400000, guid: 7b86df295fb0fa24f962b06906a57207, type: 2}
   - {fileID: 11400000, guid: f5f322d5eaa0054429ca211aea2ba371, type: 2}
+  - {fileID: 11400000, guid: 568284e5f3fd47b4fad91bbacf90f986, type: 2}
   maskVisual: {fileID: 4722412358290352311}
   Cursor: {fileID: 1415526348030947300}
 --- !u!1001 &8100259339819791590

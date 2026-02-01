@@ -70,7 +70,6 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-
     void Update()
     {
         if (!target)

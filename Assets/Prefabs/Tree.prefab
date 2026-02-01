@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8841657486709378810
 Transform:
   m_ObjectHideFlags: 0
@@ -205,14 +205,18 @@ MonoBehaviour:
   maxHealth: 1000
   bar: {fileID: 2881715138155958815}
   cursed: 0
+  deathSound: {fileID: 0}
+  enemysound: {fileID: 0}
   Alignment: 0
   drops: []
+  currentHealth: 1
   SignalKnockback:
     m_PersistentCalls:
       m_Calls: []
   SignalUncursed:
     m_PersistentCalls:
       m_Calls: []
+  uncursed: 0
 --- !u!58 &4399867598809036563
 CircleCollider2D:
   m_ObjectHideFlags: 0

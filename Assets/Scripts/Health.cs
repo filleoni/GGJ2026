@@ -64,6 +64,8 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        print(damage);
+
         currentHealth = Mathf.Max(currentHealth - damage * ((cursed && uncursed > 0) ? 3 : 1), 0);
         if (animator)
             animator.SetTrigger("Damaged");
@@ -81,8 +83,9 @@ public class Health : MonoBehaviour
 
     public void TakePercentualDamage(float percent)
     {
-        print(percent + ", " + maxHealth * percent + ", " + currentHealth);
-        TakeDamage(maxHealth * percent / 3);
+        float damage = maxHealth * Mathf.Clamp(percent, 0, 1);
+        print(percent + ", " + damage + ", " + currentHealth);
+        TakeDamage(maxHealth * damage);
     }
 
     public void TakeKnockback(Vector2 knockback)
