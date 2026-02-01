@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e76b4233e4efdf54590727752f0a68c2
+guid: a20416ebaad0b5b4dab35612781df0fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4564923052562946831
-    second: Mask_Purifier_0
-  - first:
-      213: 3998505523351599138
-    second: Mask_Purifier_1
+      213: 1038289831364555504
+    second: Mask_Accelerator_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mask_Purifier_0
+      name: Mask_Accelerator_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 180
-        width: 292
-        height: 116
+        x: 3
+        y: 22
+        width: 294
+        height: 266
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f46ef07ba226a0c0800000000000000
-      internalID: -4564923052562946831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mask_Purifier_1
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 11
-        width: 274
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2283fc7a69b8d7730800000000000000
-      internalID: 3998505523351599138
+      spriteID: 0f2726cb91fb86e00800000000000000
+      internalID: 1038289831364555504
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mask_Purifier_0: -4564923052562946831
-      Mask_Purifier_1: 3998505523351599138
+      Mask_Accelerator_0: 1038289831364555504
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
