@@ -7,6 +7,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] List<EnemyWave> waves;
     [SerializeField] float startWait = 5;
 
+    [SerializeField] List<Transform> spawnPos;
+
     int currentWaveIndex = 0;
     Coroutine currentWave;
 
@@ -33,7 +35,9 @@ public class EnemySpawner : MonoBehaviour
 
             GameObject enemy = Instantiate(wave.enemies[currentEnemy], transform);
             enemy.transform.SetParent(null);
-            enemy.transform.position += Vector3.right * 4;
+
+            Vector3 pos = spawnPos[Random.Range(0, spawnPos.Count)].transform.position;
+            enemy.transform.position = pos;
 
             yield return new WaitForSeconds(wave.timeBetweenSpawn);
             currentEnemy++;

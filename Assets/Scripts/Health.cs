@@ -39,7 +39,8 @@ public class Health : MonoBehaviour
         
         Debug.Log("started sound from enemies");
         
-        enemysound.Play(transform);
+        if (enemysound)
+            enemysound.Play(transform);
     }
 
     private void Update()
