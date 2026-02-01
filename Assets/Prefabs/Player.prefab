@@ -173,7 +173,7 @@ LineRenderer:
   - {x: 0, y: -0.8, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.4
+    widthMultiplier: 0.6
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 822878176001816576}
-  followRadius: 1
+  followRadius: 0.25
 --- !u!1 &8378537942657350719
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2.5
+  playerRadius: 1.5
 --- !u!114 &6268273176773203635
 MonoBehaviour:
   m_ObjectHideFlags: 0

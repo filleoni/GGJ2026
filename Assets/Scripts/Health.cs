@@ -72,7 +72,7 @@ public class Health : MonoBehaviour
     public void TakePercentualDamage(float percent)
     {
         print(percent + ", " + maxHealth * percent + ", " + currentHealth);
-        TakeDamage(maxHealth * percent);
+        TakeDamage(maxHealth * percent / 3);
     }
 
     public void TakeKnockback(Vector2 knockback)

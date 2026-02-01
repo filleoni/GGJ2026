@@ -19,7 +19,7 @@ public class Star : MonoBehaviour
     static List<Star> currentFragments = new();
     List<Star> followedFragments = new();
 
-    public static UnityEvent SignalScore;
+    public static UnityEvent SignalScore = new();
 
     public void SetInitialForce(Vector2 force)
     {

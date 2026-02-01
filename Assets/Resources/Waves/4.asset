@@ -10,20 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ff42ca6fd6677f40a91184d84ebd906, type: 3}
-  m_Name: 2
+  m_Name: 4
   m_EditorClassIdentifier: 
-  initialWait: 10
+  initialWait: 20
   timeBetweenSpawn: 1
   enemies:
   - {fileID: 8168349363908191893, guid: c06266762fe9eca4888b34fd6278fa98, type: 3}
   - {fileID: 8168349363908191893, guid: c06266762fe9eca4888b34fd6278fa98, type: 3}
   - {fileID: 8168349363908191893, guid: c06266762fe9eca4888b34fd6278fa98, type: 3}
   - {fileID: 8168349363908191893, guid: c06266762fe9eca4888b34fd6278fa98, type: 3}
-  - {fileID: 8168349363908191893, guid: c06266762fe9eca4888b34fd6278fa98, type: 3}
   - {fileID: 5566076977191010630, guid: d540685458825a24f9f9cba5cd0b0439, type: 3}
   - {fileID: 8168349363908191893, guid: 637d172ee7f9d3c48b53939021a802ef, type: 3}
-  - {fileID: 8168349363908191893, guid: 637d172ee7f9d3c48b53939021a802ef, type: 3}
-  - {fileID: 8168349363908191893, guid: 637d172ee7f9d3c48b53939021a802ef, type: 3}
-  - {fileID: 8168349363908191893, guid: 637d172ee7f9d3c48b53939021a802ef, type: 3}
-  - {fileID: 8168349363908191893, guid: 637d172ee7f9d3c48b53939021a802ef, type: 3}
   - {fileID: 5566076977191010630, guid: d540685458825a24f9f9cba5cd0b0439, type: 3}
+  - {fileID: 5566076977191010630, guid: d540685458825a24f9f9cba5cd0b0439, type: 3}
+  - {fileID: 5566076977191010630, guid: d540685458825a24f9f9cba5cd0b0439, type: 3}
+  - {fileID: 5566076977191010630, guid: 1225d3ff007ba2041b82f6d90a0ba2d1, type: 3}
+  - {fileID: 5566076977191010630, guid: 1225d3ff007ba2041b82f6d90a0ba2d1, type: 3}
+  - {fileID: 5566076977191010630, guid: 1225d3ff007ba2041b82f6d90a0ba2d1, type: 3}
+  - {fileID: 5566076977191010630, guid: 1225d3ff007ba2041b82f6d90a0ba2d1, type: 3}
+  - {fileID: 5566076977191010630, guid: 1225d3ff007ba2041b82f6d90a0ba2d1, type: 3}
+  - {fileID: 5566076977191010630, guid: d540685458825a24f9f9cba5cd0b0439, type: 3}
+  - {fileID: 5566076977191010630, guid: d540685458825a24f9f9cba5cd0b0439, type: 3}
+  - {fileID: 8168349363908191893, guid: 637d172ee7f9d3c48b53939021a802ef, type: 3}
