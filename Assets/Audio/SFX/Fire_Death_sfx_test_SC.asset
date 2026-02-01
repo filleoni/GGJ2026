@@ -23,8 +23,8 @@ MonoBehaviour:
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
       priority: 0.5
-      distanceEnabled: 1
-      distanceScale: 100
+      distanceEnabled: 0
+      distanceScale: 50
       preventEndClicks: 1
       loopEnabled: 0
       followPosition: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       spatialBlendExpand: 0
-      spatialBlend: 1
+      spatialBlend: 0
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
       spatialBlendDistanceCurve:
@@ -653,5 +653,5 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f4cc80890cf84ca458c6161d3101113b, type: 3}
     - {fileID: 8300000, guid: 3a29d6ef2d1f9cc4ea19b98e267b313c, type: 3}
     notes: Notes
-  assetGuid: 
-  assetGuidHash: 0
+  assetGuid: 35e5273b637cec544a340fa5b02770a8
+  assetGuidHash: 5231283929130546271

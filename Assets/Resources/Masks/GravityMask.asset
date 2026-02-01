@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GravityMask
   m_EditorClassIdentifier: 
   name: Accelerator
-  image: {fileID: 1038289831364555504, guid: a20416ebaad0b5b4dab35612781df0fb, type: 3}
+  image: {fileID: 21300000, guid: a20416ebaad0b5b4dab35612781df0fb, type: 3}
   damage: 10
   cooldown: 2
   effectRange: 1
@@ -33,3 +33,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   asset: {fileID: 8694414325751750033, guid: 6857a7fb4936339409d5cdebe1f95be5, type: 3}
+  gravityMask: {fileID: 11400000, guid: 50623ca0aeb46ba4187efc51897a8b11, type: 2}
+  laserMask: {fileID: 0}
+  rainMask: {fileID: 0}

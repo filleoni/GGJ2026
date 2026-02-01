@@ -23,8 +23,8 @@ MonoBehaviour:
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
       priority: 0.5
-      distanceEnabled: 1
-      distanceScale: 100
+      distanceEnabled: 0
+      distanceScale: 50
       preventEndClicks: 1
       loopEnabled: 0
       followPosition: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
       randomStartPosition: 0
       randomStartPositionMin: 0
       randomStartPositionMax: 1
-      startPosition: 0
+      startPosition: 0.175
       neverStealVoice: 0
       neverStealVoiceEffects: 0
       reverse: 0
@@ -47,8 +47,8 @@ MonoBehaviour:
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
       volumeExpand: 1
-      volumeDecibel: 0
-      volumeRatio: 1
+      volumeDecibel: -4
+      volumeRatio: 0.63095737
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
       volumeDistanceRolloff: -2
@@ -203,7 +203,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       spatialBlendExpand: 0
-      spatialBlend: 1
+      spatialBlend: 0
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
       spatialBlendDistanceCurve:
@@ -373,9 +373,9 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      distortionExpand: 0
-      distortionEnabled: 0
-      distortionAmount: 0.25
+      distortionExpand: 1
+      distortionEnabled: 1
+      distortionAmount: 0.15
       distortionDistanceEnable: 0
       distortionDistanceRolloff: -4
       distortionDistanceCurve:
@@ -652,5 +652,5 @@ MonoBehaviour:
     audioClips:
     - {fileID: 8300000, guid: af2684e6e1d826d4abf678ab24443c2a, type: 3}
     notes: Notes
-  assetGuid: 
-  assetGuidHash: 0
+  assetGuid: ac1b555e16229be4185efbae1bb71fe9
+  assetGuidHash: 7088777335573150185

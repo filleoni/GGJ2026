@@ -139,6 +139,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   jumpHeight: 0.7
   particleSystem: {fileID: 9135500219450358485}
+  gravityBombSFX: {fileID: 11400000, guid: 50623ca0aeb46ba4187efc51897a8b11, type: 2}
 --- !u!1 &8353199095309155178
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using Sonity;
 
 public class Health : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject bar = null;
     public bool cursed = false;
     Vector3 barStartSize;
+
+    [SerializeField] private SoundEvent deathSound;
+    
+    [SerializeField] private SoundEvent enemysound;
 
     public enum Teams { Good, Evil, Cursed }
     public Teams Alignment = Teams.Evil;
@@ -31,6 +36,10 @@ public class Health : MonoBehaviour
         if (bar)
             barStartSize = bar.transform.localScale;
         currentHealth = maxHealth;
+        
+        Debug.Log("started sound from enemies");
+        
+        enemysound.Play(transform);
     }
 
     private void Update()
@@ -84,6 +93,7 @@ public class Health : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            
             float angleOffset = Random.Range(0, 360);
             for (int i = 0; i < drops.Count; i++)
             {
@@ -97,6 +107,7 @@ public class Health : MonoBehaviour
                     star.SetInitialForce(((Vector2)(Quaternion.AngleAxis(factor * 360 + angleOffset, Vector3.forward) * Vector3.right) + Random.insideUnitCircle * 0.1f) * 0.02f);
                 }
             }
+            enemysound.Stop(transform);
 
             if (Alignment != Teams.Good)
                 Destroy(gameObject);

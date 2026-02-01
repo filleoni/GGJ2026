@@ -24,7 +24,7 @@ MonoBehaviour:
       settingsExpandAdvanced: 0
       priority: 0.5
       distanceEnabled: 1
-      distanceScale: 100
+      distanceScale: 25
       preventEndClicks: 1
       loopEnabled: 1
       followPosition: 1
@@ -51,7 +51,7 @@ MonoBehaviour:
       volumeRatio: 1
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
-      volumeDistanceRolloff: -2
+      volumeDistanceRolloff: -4
       volumeDistanceCurve:
         serializedVersion: 2
         m_Curve:
@@ -652,5 +652,5 @@ MonoBehaviour:
     audioClips:
     - {fileID: 8300000, guid: c278ad6f6dfaee342823e9e36c0e3bb8, type: 3}
     notes: Notes
-  assetGuid: 
-  assetGuidHash: 0
+  assetGuid: eba3bc3f866da314aa502203cdc05034
+  assetGuidHash: -7371227741863909620

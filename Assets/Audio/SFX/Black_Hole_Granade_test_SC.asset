@@ -17,14 +17,14 @@ MonoBehaviour:
       foundReferences: []
       previewAudioMixerGroup: {fileID: 0}
       expandPreview: 0
-      expandAudioClips: 1
+      expandAudioClips: 0
       previewCurves: 1
       audioMixerGroup: {fileID: 0}
-      settingsExpandBase: 1
+      settingsExpandBase: 0
       settingsExpandAdvanced: 0
       priority: 0.5
       distanceEnabled: 1
-      distanceScale: 100
+      distanceScale: 50
       preventEndClicks: 1
       loopEnabled: 0
       followPosition: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
       randomStartPosition: 0
       randomStartPositionMin: 0
       randomStartPositionMax: 1
-      startPosition: 0
+      startPosition: 0.02
       neverStealVoice: 0
       neverStealVoiceEffects: 0
       reverse: 0
@@ -46,12 +46,12 @@ MonoBehaviour:
       bypassListenerEffects: 0
       hrtfPluginSpatialize: 0
       hrtfPluginSpatializePostEffects: 0
-      volumeExpand: 1
-      volumeDecibel: 0
-      volumeRatio: 1
+      volumeExpand: 0
+      volumeDecibel: 4
+      volumeRatio: 1.5848932
       volumeRandomEnable: 0
       volumeRandomRangeDecibel: -3
-      volumeDistanceRolloff: -2
+      volumeDistanceRolloff: -4
       volumeDistanceCurve:
         serializedVersion: 2
         m_Curve:
@@ -374,8 +374,8 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       distortionExpand: 0
-      distortionEnabled: 0
-      distortionAmount: 0.25
+      distortionEnabled: 1
+      distortionAmount: 0.15
       distortionDistanceEnable: 0
       distortionDistanceRolloff: -4
       distortionDistanceCurve:
@@ -435,8 +435,8 @@ MonoBehaviour:
       lowpassFrequencyEngine: 1
       lowpassAmountEditor: 6
       lowpassAmountEngine: 1
-      lowpassDistanceEnable: 0
-      lowpassDistanceFrequencyRolloff: -2
+      lowpassDistanceEnable: 1
+      lowpassDistanceFrequencyRolloff: -16
       lowpassDistanceFrequencyCurve:
         serializedVersion: 2
         m_Curve:
@@ -461,7 +461,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-      lowpassDistanceAmountRolloff: -2
+      lowpassDistanceAmountRolloff: 0
       lowpassDistanceAmountCurve:
         serializedVersion: 2
         m_Curve:
@@ -652,5 +652,5 @@ MonoBehaviour:
     audioClips:
     - {fileID: 8300000, guid: 26981a25d47600c49b2b3d8d1854c7ed, type: 3}
     notes: Notes
-  assetGuid: 
-  assetGuidHash: 0
+  assetGuid: 554315ffa6f717d4d9d3b4ffe859ec8a
+  assetGuidHash: -4317287469364786848

@@ -23,13 +23,13 @@ MonoBehaviour:
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
       priority: 0.5
-      distanceEnabled: 1
+      distanceEnabled: 0
       distanceScale: 100
       preventEndClicks: 1
       loopEnabled: 1
       followPosition: 1
       stopIfTransformIsNull: 1
-      randomStartPosition: 1
+      randomStartPosition: 0
       randomStartPositionMin: 0
       randomStartPositionMax: 1
       startPosition: 0
@@ -652,5 +652,5 @@ MonoBehaviour:
     audioClips:
     - {fileID: 8300000, guid: f97e54df2e83f06458543cfe49145fbe, type: 3}
     notes: Notes
-  assetGuid: 
-  assetGuidHash: 0
+  assetGuid: d6e6b4b918c76294d82965f974e5c450
+  assetGuidHash: 5219639882689263019

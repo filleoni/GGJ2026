@@ -23,7 +23,7 @@ MonoBehaviour:
       settingsExpandBase: 1
       settingsExpandAdvanced: 0
       priority: 0.5
-      distanceEnabled: 1
+      distanceEnabled: 0
       distanceScale: 100
       preventEndClicks: 1
       loopEnabled: 0
@@ -203,7 +203,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       spatialBlendExpand: 0
-      spatialBlend: 1
+      spatialBlend: 0
       spatialBlendDistanceRolloff: -4
       spatialBlendDistance3DIncrease: 0.5
       spatialBlendDistanceCurve:
@@ -652,5 +652,5 @@ MonoBehaviour:
     audioClips:
     - {fileID: 8300000, guid: 6015a33caad5471459dad75f4dc2af72, type: 3}
     notes: Notes
-  assetGuid: 
-  assetGuidHash: 0
+  assetGuid: ef1d4632cc7a57d4398088e8cdd1809a
+  assetGuidHash: -488979995675561324
