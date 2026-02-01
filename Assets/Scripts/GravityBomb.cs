@@ -26,6 +26,7 @@ public class GravityBomb : MonoBehaviour
         targetPos = pos;
     }
 
+    bool exploded = false;
     void Update()
     {
         float factor = timer / lifetime;
@@ -33,8 +34,11 @@ public class GravityBomb : MonoBehaviour
 
         timer += Time.deltaTime; // / (Vector3.Distance(startPos, targetPos) * 0.3f);
 
-        if (timer >= lifetime)
+        if (timer >= lifetime && !exploded)
+        { 
             StartCoroutine(Explode());
+            exploded = true;
+        }
     }
 
     float explosionTime = 1;
@@ -58,8 +62,8 @@ public class GravityBomb : MonoBehaviour
             Health victim = hits[i].collider.GetComponent<Health>();
             if (victim && victim.Alignment != Health.Teams.Good)
             {
-                victim.TakeKnockback((transform.position - victim.transform.position).normalized * 1);
-                victim.TakePercentualDamage(percentualDamage);
+                victim.TakeKnockback((transform.position - victim.transform.position).normalized * 4.5f);
+                victim.TakeDamage(victim.currentHealth * percentualDamage); // Cursed?
             }
         }
 

@@ -83,7 +83,7 @@ public class EnemyMovement : MonoBehaviour
             ProcessAttack();
         }
 
-        currentVelocity = Vector3.Lerp(currentVelocity, desiredVelocity, Time.deltaTime * 5);
+        currentVelocity = Vector3.Lerp(currentVelocity, desiredVelocity, Time.deltaTime * 3);
         transform.position += currentVelocity * Time.deltaTime * movementSpeed;
 
         if (currentVelocity.magnitude > 0.1)

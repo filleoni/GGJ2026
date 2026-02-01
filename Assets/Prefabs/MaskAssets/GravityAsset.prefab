@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf175d2d9cc92c43872b866b7d30af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectRange: 1
-  percentualDamage: 0.34
+  effectRange: 1.2
+  percentualDamage: 0.5
   lifetime: 1
   jumpCurve:
     serializedVersion: 2

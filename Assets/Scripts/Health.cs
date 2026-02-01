@@ -5,7 +5,7 @@ using Sonity;
 
 public class Health : MonoBehaviour
 {
-    public  float maxHealth = 50;
+    public float maxHealth = 50;
     [SerializeField] GameObject bar = null;
     public bool cursed = false;
     Vector3 barStartSize;
@@ -81,12 +81,14 @@ public class Health : MonoBehaviour
         SignalUncursed.Invoke(true);
     }
 
+    /*
     public void TakePercentualDamage(float percent)
     {
-        float damage = maxHealth * Mathf.Clamp(percent, 0, 1);
+        float damage = currentHealth * Mathf.Clamp(percent, 0, 1);
         print(percent + ", " + damage + ", " + currentHealth);
         TakeDamage(maxHealth * damage);
     }
+    */
 
     public void TakeKnockback(Vector2 knockback)
     {
