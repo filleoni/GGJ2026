@@ -1,5 +1,6 @@
 using UnityEngine;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class Star : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class Star : MonoBehaviour
 
     static List<Star> currentFragments = new();
     List<Star> followedFragments = new();
+
+    public static UnityEvent SignalScore;
 
     public void SetInitialForce(Vector2 force)
     {
@@ -63,7 +66,7 @@ public class Star : MonoBehaviour
                 }
 
                 // frag.currentVelocity *= 0.96f;
-                frag.currentVelocity = (Vector2)(fragCenter - frag.transform.position).normalized * Time.deltaTime * 0.4f;
+                frag.transform.position = Vector2.MoveTowards(frag.transform.position, fragCenter, Time.deltaTime * 5f);
             }
 
             if (followedFragments.Count <= 0)
@@ -88,6 +91,19 @@ public class Star : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+        if (!creates)
+        {
+            currentVelocity += Vector2.up * Time.deltaTime * 0.05f;
+            transform.up = Vector2.right;
+            transform.localScale = new Vector2(1 / Mathf.Max(currentVelocity.y, 0.5f), 1 * Mathf.Max(currentVelocity.y, 1));
+            if (currentVelocity.y >= 10)
+            {
+                SignalScore?.Invoke();
+                Destroy(gameObject);
+            }
+        }
+
 
         transform.position += (Vector3)(currentVelocity + initialForce) * Time.deltaTime * 100;
         time += Time.deltaTime;

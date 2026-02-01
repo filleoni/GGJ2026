@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float startWait = 5;
 
     int currentWaveIndex = 0;
-    IEnumerator currentWave;
+    Coroutine currentWave;
 
     void Update()
     {
@@ -16,17 +16,14 @@ public class EnemySpawner : MonoBehaviour
             startWait = Mathf.Max(startWait - Time.deltaTime, 0);
         else
         {
-            if (currentWave == null || (currentWave != null && currentWave.MoveNext() == false))
-                currentWave = ProcessWave(waves[Mathf.Clamp(currentWaveIndex, 0, waves.Count - 1)]);
-            print(currentWave.MoveNext());
+            if (currentWave == null)
+                currentWave = StartCoroutine(ProcessWave(waves[Mathf.Clamp(currentWaveIndex, 0, waves.Count - 1)]));
         }
     }
 
     IEnumerator ProcessWave(EnemyWave wave)
     {
         // print("what");
-
-        yield return new WaitForSeconds(wave.initialWait);
 
         int currentEnemy = 0;
         while (currentEnemy < wave.enemies.Count)
@@ -39,9 +36,12 @@ public class EnemySpawner : MonoBehaviour
             enemy.transform.position += Vector3.right * 4;
 
             yield return new WaitForSeconds(wave.timeBetweenSpawn);
+            currentEnemy++;
         }
+        yield return new WaitForSeconds(wave.initialWait);
 
         currentWaveIndex++;
+        currentWave = null;
         yield return false;
     }
 }

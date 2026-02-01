@@ -97,7 +97,9 @@ public class Health : MonoBehaviour
                     star.SetInitialForce(((Vector2)(Quaternion.AngleAxis(factor * 360 + angleOffset, Vector3.forward) * Vector3.right) + Random.insideUnitCircle * 0.1f) * 0.02f);
                 }
             }
-            Destroy(gameObject);
+
+            if (Alignment != Teams.Good)
+                Destroy(gameObject);
         }
     }
 }
