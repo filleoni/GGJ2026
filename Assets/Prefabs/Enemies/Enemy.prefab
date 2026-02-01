@@ -71,7 +71,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.53}
   m_Radius: 0.5
 --- !u!114 &5956527035248041269
 MonoBehaviour:
@@ -86,12 +86,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0.4
+  damage: 5
+  attackCooldown: 1
   health: {fileID: 0}
   sideStep: 0.25
   sideStep2: 0.05
-  stopDistance: 0.2
+  stopDistance: 1
   UncursedSprite: {fileID: 0}
   sprite: {fileID: 2561768974387333039}
+  cursedParticles: {fileID: 0}
+  animator: {fileID: 1200051305985312582}
 --- !u!114 &6492394304509396658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +119,7 @@ MonoBehaviour:
   SignalUncursed:
     m_PersistentCalls:
       m_Calls: []
+  uncursed: 0
 --- !u!95 &1200051305985312582
 Animator:
   serializedVersion: 7
@@ -163,7 +168,7 @@ Transform:
   m_GameObject: {fileID: 4012737071019383650}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.521, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,7 +255,7 @@ Transform:
   m_GameObject: {fileID: 8401545761763452308}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.519, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0020000339, z: 0}
   m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

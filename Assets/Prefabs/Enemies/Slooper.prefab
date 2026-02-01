@@ -9,9 +9,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 754274930832777441, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 754274930832777441, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 754274930832777441, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4545301984697022622, guid: 2ea85dee9bd606e46904e2286b2b7b9d, type: 3}
+      objectReference: {fileID: 21300000, guid: 2ea85dee9bd606e46904e2286b2b7b9d, type: 3}
+    - target: {fileID: 754274930832777441, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3626646710864104832, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -60,6 +72,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.005
       objectReference: {fileID: 0}
+    - target: {fileID: 4249227931096448127, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.314
+      objectReference: {fileID: 0}
     - target: {fileID: 4462693302948370386, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_Name
       value: Slooper
@@ -98,11 +114,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.325
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8468250215274562469, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886542718998952571, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: damage
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 8886542718998952571, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
       propertyPath: movementSpeed
@@ -112,6 +132,18 @@ PrefabInstance:
       propertyPath: UncursedSprite
       value: 
       objectReference: {fileID: 21300000, guid: 8030d0083b392c841ba6ad223879d19b, type: 3}
+    - target: {fileID: 8886542718998952571, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: attackCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073806734030856501, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_Radius
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073806734030856501, guid: 62dfc3efe406d4146982b8825051eb07, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

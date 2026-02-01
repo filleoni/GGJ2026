@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections.Generic;
+using System.Collections;
 
 [CreateAssetMenu(fileName = "newMask", menuName = "SO/PlayerMask", order = 0)]
 public class PlayerMask : ScriptableObject
@@ -101,8 +103,6 @@ public class PlayerMask : ScriptableObject
 
     public void ProcessRain(PlayerAction me)
     {
-
-
         if (Input.GetButton("Fire1"))
         {
             if (!currentAsset.activeInHierarchy)
@@ -123,6 +123,11 @@ public class PlayerMask : ScriptableObject
                     Health victim = hits[i].collider.GetComponent<Health>();
                     if (victim && victim.Alignment != Health.Teams.Good)
                     {
+                        if (victim.cursed && victim.uncursed <= 0)
+                        {
+
+                        }
+
                         victim.TakePoison(damage);
                         cooldownTimer = cooldown;
                     }

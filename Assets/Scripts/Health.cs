@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] float maxHealth = 50;
     [SerializeField] GameObject bar = null;
-    [SerializeField] bool cursed = false;
+    public bool cursed = false;
     Vector3 barStartSize;
 
     public enum Teams { Good, Evil, Cursed }
@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
     public UnityEvent<Vector2> SignalKnockback;
     public UnityEvent<bool> SignalUncursed;
 
-    float uncursed = 0;
+    public float uncursed = 0;
     float curseTime = 0.45f;
     float curseTimer = 0;
 

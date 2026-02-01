@@ -3,6 +3,8 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float movementSpeed;
+    [SerializeField] float damage;
+    [SerializeField] float attackCooldown;
     [SerializeField] Health health;
     [SerializeField, Range(-1, 1)] float sideStep;
     [SerializeField, Range(-1, 1)] float sideStep2;
@@ -10,11 +12,14 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] Sprite UncursedSprite;
     [SerializeField] SpriteRenderer sprite;
     [SerializeField] ParticleSystem cursedParticles;
+    [SerializeField] Animator animator;
 
     Sprite startSprite;
 
     Transform target;
+    Health targetHealth;
     float ss;
+    float attackTimer;
 
     void Start()
     {
@@ -22,6 +27,10 @@ public class EnemyMovement : MonoBehaviour
             startSprite = sprite.sprite;
 
         target = Object.FindFirstObjectByType<LifeTree>().transform;
+        if (target)
+            targetHealth = target.GetComponent<Health>();
+
+        animator = GetComponent<Animator>();
         if (!health)
         {
             health = GetComponent<Health>();
@@ -61,6 +70,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+
     void Update()
     {
         if (!target)
@@ -69,7 +79,10 @@ public class EnemyMovement : MonoBehaviour
         desiredPosition = target.position;
         desiredVelocity = Quaternion.AngleAxis(-90 * ss, Vector3.forward) * (desiredPosition - transform.position).normalized;
         if ((desiredPosition - transform.position).magnitude < stopDistance)
+        {
             desiredVelocity = Vector2.zero;
+            ProcessAttack();
+        }
 
         currentVelocity = Vector3.Lerp(currentVelocity, desiredVelocity, Time.deltaTime * 5);
         transform.position += currentVelocity * Time.deltaTime * movementSpeed;
@@ -78,5 +91,18 @@ public class EnemyMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(Mathf.Sign(-currentVelocity.x), transform.localScale.y, transform.localScale.z);
         }
+    }
+
+    void ProcessAttack()
+    {
+        if (attackTimer <= 0)
+        {
+            targetHealth.TakeDamage(damage);
+            attackTimer = attackCooldown;
+
+            animator.SetTrigger("Attack");
+        }
+        else
+            attackTimer = Mathf.Max(attackTimer - Time.deltaTime, 0);
     }
 }

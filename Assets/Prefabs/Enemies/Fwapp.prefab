@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1369877176229796657, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.651
+      objectReference: {fileID: 0}
     - target: {fileID: 1446827184885657756, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_Name
       value: Fwapp
@@ -77,8 +81,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5956527035248041269, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956527035248041269, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: movementSpeed
       value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956527035248041269, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: attackCooldown
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059067065674270331, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: m_Radius
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6059067065674270331, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 6492394304509396658, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: maxHealth
@@ -102,7 +122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6665264736334816491, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.657
+      value: -0.008000001
       objectReference: {fileID: 0}
     - target: {fileID: 6665264736334816491, guid: 4dc79d5327240964192cced7fa2b71ff, type: 3}
       propertyPath: m_ConstrainProportionsScale
